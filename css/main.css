@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+.navbar {
+  background-color: #037cc3;
+}
+
+.navbar .container-fluid a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 11px 15px;
+  border-right: 1px solid rgba(204, 189, 189, 0.611);
+}
+
+.navbar .container-fluid .navbar-brand {
+  margin: 0;
+}
+
+.navbar .container-fluid .navbar-brand img {
+  width: 38px;
+}
+
+.navbar .container-fluid .navbar-right ul li a {
+  padding: 11px 15px;
+}
+
+.navVehicles_dropdown {
+  background-color: #3e6989;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__List {
+  padding: 15px 0;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__List .row a {
+  text-decoration: none;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 30px;
+  border-right: 1px solid rgba(204, 189, 189, 0.611);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail {
+  padding: 25px 0;
+  background-color: #f5f5f5;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify {
+  position: relative;
+  top: -30px;
+  color: #00324f;
+  font-size: 1.8rem;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p i {
+  font-size: 1rem;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p span {
+  font-weight: normal;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+//helpers
+@import "./helpers/functions";
+@import "./helpers/mixins";
+@import "./helpers/variables";
+
+//vendor
+@import "./vendors/bootstrap";
+
+//base
+@import "./base/reset";
+
+//layout
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/sidebar";
+
+//components
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/cover";
+
+// pages
+@import "./pages/home";
+
+//responsive
+@import "./responsive/responsive";
+
+//theme
