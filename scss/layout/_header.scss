@@ -1,74 +1,102 @@
 .navbar {
-    background-color: $color-blue-1;
-    .container-fluid {
-        a {
-            color: white;
-            text-decoration: none;
-            font-size: $font-size-0;
-            padding: $pd-1 - 4 $pd-1;
-            border-right: $color-border-white;
-        }
-        .navbar-brand {
-            margin: 0;
-            img {
-                width: 38px;
-            }
-        }
-        .navbar-right {
-            ul {
-                li {
-                    a {
-                        padding: $pd-1 - 4 $pd-1;
-                    }
-                }
-            }
-        }
+  background-color: $color-blue-1;
+  .container-fluid {
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: $font-size-0;
+      padding: $pd-1 - 4 $pd-1;
+      border-right: $color-border-white;
     }
+    .navbar-brand {
+      margin: 0;
+      img {
+        width: 38px;
+      }
+    }
+    .navbar-right {
+      ul {
+        li {
+          a {
+            padding: $pd-1 - 4 $pd-1;
+          }
+        }
+      }
+    }
+  }
 }
 .navVehicles_dropdown {
-    background-color: $color-blue-8;
-    .navVehicles_dropdown__Big {
-        background-color: $color-white;
-        width: 80%;
-        margin: 0 auto;
-        overflow: hidden;
-        .navVehicles_dropdown__List {
-            padding: $pd-1 0;
-            .row {
-                a {
-                    text-decoration: none;
-                    color: $color-black;
-                    text-decoration: none;
-                    font-size: 1.2rem;
-                    font-weight: $font-weight-bold;
-                    padding: 0 $pd-4;
-                    border-right: $color-border-white;
-                    white-space: nowrap;
-                    text-align: center;
-                }
-            }
+  background-color: $color-blue-8;
+  .navVehicles_dropdown__Big {
+    background-color: $color-white;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    .navVehicles_dropdown__List {
+      padding: $pd-1 0;
+      a {
+        text-decoration: none;
+        color: $color-blue-9;
+        font-size: 1.2rem;
+        font-weight: $font-weight-bold;
+        padding: 0 $pd-4;
+        border-right: $color-border-white;
+        white-space: nowrap;
+        text-align: center;
+        &:hover {
+          color: $color-blue-9;
         }
-        .navVehicles_dropdown__detail {
-            padding: $pd-3 0;
-            background-color: $color-grey-1;
-            .navVehicles_dropdown__hr {
-                .navVehicles_dropdown__hr_modify {
-                    position: relative;
-                    top: $mg-up-1;
-                    color: $color-blue-6;
-                    font-size: $font-size-1;
-                    p {
-                        font-weight: $font-weight-bold;
-                        background-color: $color-grey-1;
-                        i {
-                            font-size: $font-size-4;
-                        }
-                        span {
-                            font-weight: $font-weight-normal;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+    .navVehicles_dropdown__detail {
+      padding: $pd-3 0;
+      background-color: $color-grey-1;
+      .navVehicles_dropdown__hr {
+        .navVehicles_dropdown__hr_modify {
+          position: relative;
+          top: $mg-up-1;
+          color: $color-blue-6;
+          font-size: $font-size-1;
+          p {
+            font-weight: $font-weight-bold;
+            background-color: $color-grey-1;
+            i {
+              font-size: $font-size-4;
+            }
+            span {
+              font-weight: $font-weight-normal;
+            }
+          }
+        }
+      }
+    }
+    .navVehicles_dropdown__Cars {
+      color: $color-blue-6;
+      .navVehicles_dropdown__items {
+        &:hover > #xe-1 {
+          display: none;
+        }
+        &:hover > #xe-2 {
+          display: block;
+        }
+        #xe-2 {
+          display: none;
+        }
+        h3 {
+          font-size: $font-size-4;
+          font-weight: $font-weight-bold;
+        }
+        .navVehicles_dropdown__content {
+          h4 {
+            font-size: $font-size-5;
+            font-weight: $font-weight-normal;
+          }
+          p {
+            font-size: $font-size-6;
+            font-weight: $font-weight-normal;
+          }
+        }
+      }
+    }
+  }
 }

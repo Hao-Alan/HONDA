@@ -1,0 +1,22 @@
+@mixin button($border-color, $bg, $pd, $color, $bg-hover, $color-hover) {
+    border: 2px solid $border-color;
+    background-color: $bg;
+    padding: $pd 30px;
+    color: $color;
+    border-radius: 40px;
+    font-size: $font-size-0;
+    font-weight: $font-weight-bold;
+    &:hover {
+        background-color: $bg-hover;
+        color: $color-hover;
+    }
+}
+
+.navVehicles_dropdown__button {
+    .explore {
+        @include button($color-blue-2, $color-blue-2, $pd-6, $color-white, $color-white, $color-blue-1);
+    }
+    .build {
+        @include button($color-blue-2, $color-white, $pd-6, $color-blue-1, $color-blue-2, $color-white);
+    }
+}

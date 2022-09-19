@@ -48,16 +48,19 @@ html {
   padding: 15px 0;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__List .row a {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__List a {
   text-decoration: none;
-  color: #000000;
-  text-decoration: none;
+  color: #2198dc;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0 30px;
   border-right: 1px solid rgba(204, 189, 189, 0.611);
   white-space: nowrap;
   text-align: center;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__List a:hover {
+  color: #2198dc;
 }
 
 .navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail {
@@ -78,10 +81,71 @@ html {
 }
 
 .navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p i {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p span {
   font-weight: normal;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars {
+  color: #00324f;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items:hover > #xe-1 {
+  display: none;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items:hover > #xe-2 {
+  display: block;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items #xe-2 {
+  display: none;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items .navVehicles_dropdown__content h4 {
+  font-size: 2.3rem;
+  font-weight: normal;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items .navVehicles_dropdown__content p {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.navVehicles_dropdown__button .explore {
+  border: 2px solid #2298dc;
+  background-color: #2298dc;
+  padding: 6px 30px;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navVehicles_dropdown__button .explore:hover {
+  background-color: #fff;
+  color: #037cc3;
+}
+
+.navVehicles_dropdown__button .build {
+  border: 2px solid #2298dc;
+  background-color: #fff;
+  padding: 6px 30px;
+  color: #037cc3;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navVehicles_dropdown__button .build:hover {
+  background-color: #2298dc;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
