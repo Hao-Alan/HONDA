@@ -32,7 +32,7 @@
           <a class="navbar-brand" href="#">
             <img src="./img/honda-logo-11540236617dtkc4wercc.png" alt="" />
           </a>
-          <a href="#">VEHICLES <i class="fa fa-caret-down"></i></i></a>
+          <a href="#" onclick="dropdown()">VEHICLES <i class="fa fa-caret-down"></i></i></a>
           <a href="#"
             >SHOPING TOOLS <i class="fa fa-caret-down"></i></i
           ></a>
@@ -55,24 +55,9 @@
                   </li>
                 </ul>
           </div>
-           
-     
-            <!--<button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          </div> -->
         </div>
       </nav>
-      <section class="navVehicles_dropdown ">
+      <section class="navVehicles_dropdown " id="navVehicles_dropdown">
         <div class="navVehicles_dropdown__Big">
             <div class="navVehicles_dropdown__List ">
                 <div class="row">
@@ -85,41 +70,196 @@
                     </div>
                 </div>
             </div>
-            <div class="navVehicles_dropdown__detail">
-                <div class="navVehicles_dropdown__hr">
-                    <hr>
-                    <div class="navVehicles_dropdown__hr_modify text-center ">
-                        <p class="d-inline align-items-center">CARS <i class="fa fa-circle"></i>
-                            <span>Sedans</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="navVehicles_dropdown__Cars">
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <div class="navVehicles_dropdown__items">
-                    <img src="./img/xe-1.png" id="xe-1" class="img-fluid"  alt="">
-                    <img src="./img/xe-1-hover.png" id="xe-2"  class="img-fluid" alt="">
-                    <h3 class="text-center">Civic Sedan</h3>
-                    <div class="navVehicles_dropdown__content d-flex justify-content-around">
-                      <div class="navVehicles_dropdown__contentLeft">
-                        <h4>$18.810</h4>
-                        <p>Staring</p>
-                        <p>MSRP</p>
+            <div class="navVehicles_dropdown__BigCover">
+              <div class="navVehicles_dropdown__detail">
+                  <div class="navVehicles_dropdown__hr">
+                      <hr>
+                      <div class="navVehicles_dropdown__hr_modify text-center ">
+                          <p class="d-inline align-items-center">CARS <i class="fa fa-circle"></i>
+                              <span>Sedans</span>
+                          </p>
                       </div>
-                      <div class="navVehicles_dropdown__contentRight">
-                        <h4>40/28</h4>
-                        <p>Staring</p>
-                        <p>MSRP</p>
+                  </div>
+              </div>
+             
+              <div class="navVehicles_dropdown__Cars">
+                <div class="row">
+                  <!-- danh sach loai xe  -->
+                  <div class="col-sm-6 col-md-4">
+                    <div class="navVehicles_dropdown__items" id="car-1">
+                      <img src="./img/xe-1.png" id="xe-1" class="img-fluid"  alt="">
+                      <img src="./img/xe-1-hover.png" id="xe-2"  class="img-fluid" alt="">
+                      <h3 class="text-center">Civic Sedan</h3>
+                      <div class="navVehicles_dropdown__content d-flex justify-content-around">
+                        <div class="navVehicles_dropdown__contentLeft">
+                          <h4>$18.810</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                        <div class="navVehicles_dropdown__contentRight">
+                          <h4>40/28</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                      
                       </div>
-                    
-                    </div>
-                    <div class="navVehicles_dropdown__button text-center">
-                      <button class="explore btn  ">EXPLORE</button>
-                      <button class="build btn btn-active">BUILD</button>
+                      <div class="navVehicles_dropdown__button text-center">
+                        <button class="explore btn  ">EXPLORE</button>
+                        <button class="build btn">BUILD</button>
+                      </div>
                     </div>
                   </div>
+                    <!-- danh sach loai xe  -->
+                    <div class="col-sm-6 col-md-4">
+                      <div class="navVehicles_dropdown__items" id="car-2">
+                        <img src="./img/xe-2.png" id="xe-1" class="img-fluid"  alt="">
+                        <img src="./img/xe-2-hover.png" id="xe-2"  class="img-fluid" alt="">
+                        <h3 class="text-center">Civic Sedan</h3>
+                        <div class="navVehicles_dropdown__content d-flex justify-content-around">
+                          <div class="navVehicles_dropdown__contentLeft">
+                            <h4>$18.810</h4>
+                            <p>Staring</p>
+                            <p>MSRP</p>
+                          </div>
+                          <div class="navVehicles_dropdown__contentRight">
+                            <h4>40/28</h4>
+                            <p>Staring</p>
+                            <p>MSRP</p>
+                          </div>
+                        
+                        </div>
+                        <div class="navVehicles_dropdown__button text-center">
+                          <button class="explore btn  ">EXPLORE</button>
+                          <button class="build btn">BUILD</button>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- danh sach loai xe  -->
+                  <div class="col-sm-6 col-md-4">
+                    <div class="navVehicles_dropdown__items" id="car-3">
+                      <img src="./img/xe-3.png" id="xe-1" class="img-fluid"  alt="">
+                      <img src="./img/xe-3-hover.png" id="xe-2"  class="img-fluid" alt="">
+                      <h3 class="text-center">Civic Sedan</h3>
+                      <div class="navVehicles_dropdown__content d-flex justify-content-around">
+                        <div class="navVehicles_dropdown__contentLeft">
+                          <h4>$18.810</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                        <div class="navVehicles_dropdown__contentRight">
+                          <h4>40/28</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                      
+                      </div>
+                      <div class="navVehicles_dropdown__button text-center">
+                        <button class="explore btn  ">EXPLORE</button>
+                        <button class="build btn">BUILD</button>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- danh sach loai xe  -->
+                    <div class="col-sm-6 col-md-4">
+                      <div class="navVehicles_dropdown__items" id="car-4">
+                        <img src="./img/xe-4.png" id="xe-1" class="img-fluid"  alt="">
+                        <img src="./img/xe-4-hover.png" id="xe-2"  class="img-fluid" alt="">
+                        <h3 class="text-center">Civic Sedan</h3>
+                        <div class="navVehicles_dropdown__content d-flex justify-content-around">
+                          <div class="navVehicles_dropdown__contentLeft">
+                            <h4>$18.810</h4>
+                            <p>Staring</p>
+                            <p>MSRP</p>
+                          </div>
+                          <div class="navVehicles_dropdown__contentRight">
+                            <h4>40/28</h4>
+                            <p>Staring</p>
+                            <p>MSRP</p>
+                          </div>
+                        
+                        </div>
+                        <div class="navVehicles_dropdown__button text-center">
+                          <button class="explore btn  ">EXPLORE</button>
+                          <button class="build btn">BUILD</button>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- danh sach loai xe  -->
+                  <div class="col-sm-6 col-md-4">
+                    <div class="navVehicles_dropdown__items" id="car-5">
+                      <img src="./img/xe-1.png" id="xe-1" class="img-fluid"  alt="">
+                      <img src="./img/xe-1-hover.png" id="xe-2"  class="img-fluid" alt="">
+                      <h3 class="text-center">Civic Sedan</h3>
+                      <div class="navVehicles_dropdown__content d-flex justify-content-around">
+                        <div class="navVehicles_dropdown__contentLeft">
+                          <h4>$18.810</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                        <div class="navVehicles_dropdown__contentRight">
+                          <h4>40/28</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                      
+                      </div>
+                      <div class="navVehicles_dropdown__button text-center">
+                        <button class="explore btn  ">EXPLORE</button>
+                        <button class="build btn">BUILD</button>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- danh sach loai xe  -->
+                    <div class="col-sm-6 col-md-4">
+                      <div class="navVehicles_dropdown__items" id="car-6">
+                        <img src="./img/xe-2.png" id="xe-1" class="img-fluid"  alt="">
+                        <img src="./img/xe-2-hover.png" id="xe-2"  class="img-fluid" alt="">
+                        <h3 class="text-center">Civic Sedan</h3>
+                        <div class="navVehicles_dropdown__content d-flex justify-content-around">
+                          <div class="navVehicles_dropdown__contentLeft">
+                            <h4>$18.810</h4>
+                            <p>Staring</p>
+                            <p>MSRP</p>
+                          </div>
+                          <div class="navVehicles_dropdown__contentRight">
+                            <h4>40/28</h4>
+                            <p>Staring</p>
+                            <p>MSRP</p>
+                          </div>
+                        
+                        </div>
+                        <div class="navVehicles_dropdown__button text-center">
+                          <button class="explore btn  ">EXPLORE</button>
+                          <button class="build btn">BUILD</button>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- danh sach loai xe  -->
+                  <div class="col-sm-6 col-md-4">
+                    <div class="navVehicles_dropdown__items" id="car-1">
+                      <img src="./img/xe-1.png" id="xe-1" class="img-fluid"  alt="">
+                      <img src="./img/xe-1-hover.png" id="xe-2"  class="img-fluid" alt="">
+                      <h3 class="text-center">Civic Sedan</h3>
+                      <div class="navVehicles_dropdown__content d-flex justify-content-around">
+                        <div class="navVehicles_dropdown__contentLeft">
+                          <h4>$18.810</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                        <div class="navVehicles_dropdown__contentRight">
+                          <h4>40/28</h4>
+                          <p>Staring</p>
+                          <p>MSRP</p>
+                        </div>
+                      
+                      </div>
+                      <div class="navVehicles_dropdown__button text-center">
+                        <button class="explore btn  ">EXPLORE</button>
+                        <button class="build btn">BUILD</button>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>

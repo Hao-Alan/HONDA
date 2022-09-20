@@ -1,0 +1,7 @@
+@each $stt, $spec in (1, #ff3f41), (2, #2298dc), (3, #065482), (4, #29527f), (5, #00446d), (6, #00324f) {
+    #car-#{$stt} {
+        &:hover {
+            background: linear-gradient($spec, $color-grey-1, $color-grey-1);
+        }
+    }
+}

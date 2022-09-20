@@ -1,3 +1,33 @@
+#car-1:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff3f41), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#ff3f41, #f5f5f5, #f5f5f5);
+}
+
+#car-2:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2298dc), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#2298dc, #f5f5f5, #f5f5f5);
+}
+
+#car-3:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#065482), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#065482, #f5f5f5, #f5f5f5);
+}
+
+#car-4:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#29527f), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#29527f, #f5f5f5, #f5f5f5);
+}
+
+#car-5:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00446d), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#00446d, #f5f5f5, #f5f5f5);
+}
+
+#car-6:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00324f), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#00324f, #f5f5f5, #f5f5f5);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -35,6 +65,11 @@ html {
 
 .navVehicles_dropdown {
   background-color: #3e6989;
+  display: none;
+}
+
+.navVehicles_dropdown.isHide {
+  display: block;
 }
 
 .navVehicles_dropdown .navVehicles_dropdown__Big {
@@ -63,58 +98,73 @@ html {
   color: #2198dc;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover {
+  background-color: #f5f5f5;
+  padding-top: 15px;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__detail {
+  width: 90%;
+  margin: 0 auto;
   padding: 25px 0;
   background-color: #f5f5f5;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify {
   position: relative;
   top: -30px;
   color: #00324f;
   font-size: 1.8rem;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p {
   font-weight: bold;
   background-color: #f5f5f5;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p i {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p i {
   font-size: 1.6rem;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p span {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__detail .navVehicles_dropdown__hr .navVehicles_dropdown__hr_modify p span {
   font-weight: normal;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars {
+  width: 90%;
+  margin: 0 auto;
   color: #00324f;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items:hover > #xe-1 {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars .navVehicles_dropdown__items {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e6989), color-stop(#f5f5f5), to(#f5f5f5));
+  background: linear-gradient(#3e6989, #f5f5f5, #f5f5f5);
+  margin-bottom: 30px;
+}
+
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars .navVehicles_dropdown__items:hover > #xe-1 {
   display: none;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items:hover > #xe-2 {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars .navVehicles_dropdown__items:hover > #xe-2 {
   display: block;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items #xe-2 {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars .navVehicles_dropdown__items #xe-2 {
   display: none;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items h3 {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars .navVehicles_dropdown__items h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items .navVehicles_dropdown__content h4 {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars .navVehicles_dropdown__items .navVehicles_dropdown__content h4 {
   font-size: 2.3rem;
   font-weight: normal;
 }
 
-.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__Cars .navVehicles_dropdown__items .navVehicles_dropdown__content p {
+.navVehicles_dropdown .navVehicles_dropdown__Big .navVehicles_dropdown__BigCover .navVehicles_dropdown__Cars .navVehicles_dropdown__items .navVehicles_dropdown__content p {
   font-size: 1.3rem;
   font-weight: normal;
 }
